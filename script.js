@@ -1,6 +1,5 @@
-console.log("%cState: operative", "font-weight:bold; color:#00ff00");
+console.log("%cState: operative", "font-weight:bold; font-size:15px; color:#00ff00");
 
-//JavaSript code
 let input = document.querySelector("input");
 let response = document.querySelector("h2");
 let button = document.querySelector("button");
@@ -15,7 +14,8 @@ input.addEventListener("keydown", function(event) {
 function Calculation() {
   show_result.innerHTML = "";
   console.clear();
-  console.log("%cState: operative", "font-weight:bold; color:#00ff00");
+  console.log("%cState: operative", "font-weight:bold; font-size:15px; color:#00ff00");
+  document.getElementById("info").style.display = "none";
   try {
     if (input.value < 0) throw "Please enter a positive number";
     if (input.value == 1) throw "Please enter a number bigger than 1"
@@ -27,18 +27,21 @@ function Calculation() {
     return false
   }
 
+  document.getElementById("info").style.display = "inline";
   response.innerHTML = "Prime factor decomposition for " + "<a style=color:#4dc3ff;text-decoration:none>" + input.value + "</a>" + ":";
 
   let dividend = input.value;
   let divisor = 2;
   let result;
   var text = "";
+  let count_loop = 0;
   while (dividend > 1) {
-    count = 0;
+    var count = 0;
     while (dividend % divisor == 0) {
       result = dividend / divisor;
-      console.info("%c Calculation:", "font-weight:bold; color:coral");
-      console.log(dividend + " / " + divisor);
+      count_loop++;
+      console.info("%c Calculation " + "(" + count_loop + ")" + ":", "font-weight:bold; color:coral; font-size:15px;");
+      console.log("%c" + dividend + " / " + divisor, "font-size:14px");
       dividend = result;
       count += 1;
     }
@@ -47,7 +50,7 @@ function Calculation() {
     }
     divisor += 1;
   }
-  console.info("%c  Calculation finished", "font-weight:bold; color:#4dc3ff");
+  console.info("%c   Calculation finished", "font-weight:bold; font-size:15px; color:#4dc3ff");
   show_result.innerHTML = text;
   show_result.style.color = "#ff8f66"
 }
