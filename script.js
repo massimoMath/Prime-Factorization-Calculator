@@ -43,11 +43,11 @@ function Calculation() {
       count += 1;
     }
     if (count >= 1) {
-      text += "<br>" + divisor + "<sup style='color:#2ad58e'>" + count + "</sup>"
+      text += "<br>" + divisor + "<sup style='color:#55dda4'>" + count + "</sup>"
     }
     divisor += 1;
   }
   console.info("%c  Calculation finished", "font-weight:bold; color:#4dc3ff");
   show_result.innerHTML = text;
-  show_result.style.color = "coral"
+  show_result.style.color = "#ff8f66"
 }
