@@ -37,7 +37,7 @@ function Calculation() {
     count = 0;
     while (dividend % divisor == 0) {
       result = dividend / divisor;
-      console.info("%c Calculation:", "font-weight:bold; color:#6ede9");
+      console.info("%c Calculation:", "font-weight:bold; color:coral");
       console.log(dividend + " / " + divisor);
       dividend = result;
       count += 1;
