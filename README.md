@@ -7,18 +7,19 @@ Below is the function that allows to calculate prime factorization:
 
 ```
 function Calculation() {
-    let dividend = input.value;
-    let divisor = 2;
-    let result;
-    var text = "";
-    while (dividend > 1) {
-        while (dividend % divisor == 0) {
-            resultat = dividend / divisor;
-            dividend = result;
-            text += "<br>" + divisor;
-        }
-        divisor += 1;
-    }
-    document.getElementById("WhereYouWantToDisplayThis").innerHTML = text;
+   let dividend = input.value;
+   let divisor = 2;
+   let result;
+   var text = "";
+   while (dividend > 1) {
+      while (dividend % divisor == 0) {
+         resultat = dividend / divisor;
+         dividend = result;
+         text += "<br>" + divisor;
+      }
+      divisor += 1;
+   }
+   document.getElementById("WhereYouWantToDisplayThis").innerHTML = text;
 }
+
  ```
