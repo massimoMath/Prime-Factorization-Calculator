@@ -1,5 +1,5 @@
 # Prime factorization calculator
-link: https://helloworld-html.github.io/PrimeFactorDecomposition/
+link: https://helloworld-html.github.io/Prime-Factorization-Calculator/
 
 **This calculator allows you to calculate the prime factor decomposition of a positive integer.**
 
