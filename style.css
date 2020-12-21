@@ -13,26 +13,6 @@ user-select: none; }
 ::-webkit-scrollbar-thumb {background: #888; border-radius: 7px}
 ::-webkit-scrollbar-thumb:hover {background: white}
 
-.alert {
-animation: alert-animation 13s infinite;
-padding: 20px;
-text-align: center;
-margin: 0px;
-background-color: orange;
-color: white; }
-
-.closeAlert {
-margin-left: 15px;
-color: white;
-font-weight: bold;
-float: right;
-font-size: 22px;
-line-height: 20px;
-cursor: pointer;
-transition: 0.5s; }
-
-.closeAlert:hover {color: black}
-
 h1 {
 font-weight: normal;
 margin-top: 50px;
@@ -40,7 +20,7 @@ font-size: 220%;
 text-align: center; }
 
 input {
-margin-top: 15vh;
+margin-top: 100px;
 text-align: center;
 border: none;
 display: block;
@@ -80,11 +60,9 @@ text-align: center;
 font-size: 25px; }
 
 @media screen and (max-width: 500px) {
-.alert { padding: 10px; font-size: 11px }
-.closeAlert { margin-left: 15px; font-size: 15px; line-height: 25px }
 h1 { margin-top: 50px; font-size: 180% }
 input {
-margin-top: 10vh;
+margin-top: 75px;
 padding: 14px 25px 14px 25px;
 font-size: 15px;
 border-radius: 7px;
@@ -94,7 +72,11 @@ margin-top: 20px;
 padding: 7px 13px 7px 13px;
 border-radius: 5px;
 font-size: 10px; }
-h2 { margin-top: 35px; font-size: 20px }
+h2 {
+margin-top: 35px;
+font-size: 20px;
+padding-left: 20px;
+padding-right: 20px; }
 #result { font-size: 18px }}
 
 @keyframes fade {
