@@ -7,11 +7,9 @@ let button = document.querySelector("button");
 let show_result = document.getElementById("result");
 let info = document.getElementById("info");
 
-
 input.addEventListener("keydown", function(event) {
   if (event.keyCode === 13) { event.preventDefault(); button.click() }
 })
-
 
 function Calculation() {
   show_result.innerHTML = "";
@@ -43,7 +41,7 @@ function Calculation() {
     while (dividend % divisor == 0) {
       result = dividend / divisor;
       count_loop++;
-      console.info("%cCalculation " + "(" + count_loop + ")" + ":", "color:coral; font-size:15px;");
+      console.info("%cCalculation " + "(" + count_loop + ")" + ":", "color:coral; font-size:15px");
       console.log("%c " + dividend + " \u00f7 " + divisor, "font-size:14px");
       dividend = result;
       exponent += 1;
@@ -55,13 +53,12 @@ function Calculation() {
   }
 
   console.info("%cCalculation finished", "font-size:15px;color:#4dc3ff");
-  setTimeout(function() {
-    if (input.value == result) {
-      response.innerHTML = input.value + " is a prime number";
-    } else {
-      response.innerHTML = "Prime factor decomposition for " + "<a style=color:#4dc3ff;text-decoration:none>" + input.value + "</a>" + ":";
-    }
-    show_result.innerHTML = text;
-    show_result.style.color = "#ff8f66"
-  }, 1000)
+
+  if (divisor - 1 == input.value) {
+    response.innerHTML = "<a style=color:#4dc3ff;text-decoration:none>" + input.value + "</a>" + " is a " + "<a style='color:white' href='https://en.wikipedia.org/wiki/Prime_number' target='_blank'>" + "prime number" + "</a>" + " !";
+  } else {
+    response.innerHTML = "Prime factor decomposition for " + "<a style=color:#4dc3ff;text-decoration:none>" + input.value + "</a>" + ":";
+  }
+  show_result.innerHTML = text;
+  show_result.style.color = "#ff8f66";
 }
