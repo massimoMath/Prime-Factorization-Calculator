@@ -59,11 +59,12 @@ font-style: italic;
 font-weight: lighter;
 margin-top: 35px; }
 
-#result { text-align: center; font-size: 25px; user-select: none }
+#result { text-align: center; font-size: 25px }
 
 #info {
 position: fixed;
 display: none;
+user-select: none;
 left: 3px;
 bottom: 0px;
 font-size: 10px; }
