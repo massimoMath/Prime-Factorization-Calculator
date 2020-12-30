@@ -1,5 +1,5 @@
 //JavaScript code
-console.log("%cState: operative", "font-weight:bold;font-size:15px;color:green");
+console.info("%cState: operative", "font-weight:bold;font-size:15px;color:green");
 
 let input = document.querySelector("input");
 let response = document.querySelector("h2");
@@ -30,7 +30,7 @@ function ValidateInput() {
     return false
   }
   info.style.display = "inline";
-  console.info("%cPrime factor decomposition for " + input.value + ":", "font-size:15px;color:#4dc3ff");
+  console.log("%cPrime factor decomposition for " + input.value + ":", "font-size:15px;color:#4dc3ff");
   console.time("The program went on for");
   Calculation();
 }
@@ -48,7 +48,7 @@ function Calculation() {
     while (dividend % divisor == 0) {
       result = dividend / divisor;
       count_calculation++;
-      console.info("%cCalculation " + "(" + count_calculation + ")" + ":", "color:coral;font-size:15px");
+      console.log("%cCalculation " + "(" + count_calculation + ")" + ":", "color:coral;font-size:15px");
       console.log("%c " + dividend + " \u00f7 " + divisor, "font-size:14px");
       dividend = result;
       exponent += 1;
@@ -60,10 +60,9 @@ function Calculation() {
     count_loop++;
   }
 
-  console.info("%cCalculation finished", "font-size:15px;color:#4dc3ff");
-
+  console.log("%cCalculation finished", "font-size:15px;color:#4dc3ff");
   console.groupCollapsed("%cComplementary Information", "font-size:15px;color:#bd66ff;font-weight:bold");
-  console.info("The divisor (initially set to 2) increased " + count_loop + " time(s).");
+  console.log("The divisor (initially set to 2) increased " + count_loop + " time(s).");
   console.timeEnd("The program went on for");
   console.groupEnd();
 
