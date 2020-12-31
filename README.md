@@ -1,25 +1,15 @@
-# Prime factorization calculator
+# Prime Factorization Calculator
+
+**This calculator allows you to calculate the prime factor decomposition of a positive integer and detects if number is prime.**
+
+## Web Interface
 link: https://helloworld-html.github.io/Prime-Factorization-Calculator/
 
-**This calculator allows you to calculate the prime factor decomposition of a positive integer and detects if the number is prime.**
+This version (built with HTML, CSS, JavaScript) is the most accessible and provides a simple way to calculate prime factor decomposition. 
+*For detailed calculations, performance tools and advanced features open web console (f12)*.
 
-The calculator presents two types of interface:
-- A graphical interface (default), build with HTML, CSS and JavaScript that shows results as the following, *n<sup>a</sup> x n<sup>a</sup> x n<sup>a</sup>* ...
-- A more detailed interface available on the console (f12), build only with JavaScript, that shows every calculation performed as the following,
+## Node.js environment (comming soon)
+*This version is only accessible if you have Node.js and NPM installed (install node here: https://nodejs.org)*
+...
 
-  *Calculation (1):*
-  
-  *a / b*
-  
-  *Calculation (2):*
-  
-  *c / d*
-  
-  *Calculation (3):*
-  
-  *e / f*
-  ...
-  
-  Furthermore, advanced performance features are displayed (click on the *Complementary Information* section)
-  
 *Please report any bugs or errors, thanks for your contribution!*
