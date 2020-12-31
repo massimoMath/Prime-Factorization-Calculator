@@ -1,5 +1,5 @@
 //JavaScript code
-console.info("%cState: waiting user to input a positive integer...", "font-weight:bold;font-size:15px;color:yellow");
+console.info("%cState: waiting user to input a positive integer...", "font-weight:bold;font-size:15px;color:#cccc00");
 
 let input = document.querySelector("input");
 let response = document.querySelector("h2");
@@ -16,7 +16,7 @@ input.addEventListener("keydown", function(event) {
 function ValidateInput() {
   show_result.innerHTML = "";
   console.clear();
-  console.log("%cState: operative", "font-weight:bold;font-size:15px;color:#00ff00");
+  console.info("%cState: operative", "font-weight:bold;font-size:15px;color:#00ff00");
   info.style.display = "none";
   try {
     if (input.value < 0) throw "Please enter a positive number";
