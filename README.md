@@ -12,4 +12,5 @@ This version (built with HTML, CSS, JavaScript) is the most accessible and provi
 *This version is only accessible if you have Node.js and NPM installed (install node here: https://nodejs.org)*
 ...
 
+
 *Please report any bugs or errors, thanks for your contribution!*
