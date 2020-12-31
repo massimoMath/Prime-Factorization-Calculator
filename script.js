@@ -1,5 +1,5 @@
 //JavaScript code
-console.info("%cState: operative", "font-weight:bold;font-size:15px;color:green");
+console.info("%cState: waiting user to input a positive integer...", "font-weight:bold;font-size:15px;color:yellow");
 
 let input = document.querySelector("input");
 let response = document.querySelector("h2");
