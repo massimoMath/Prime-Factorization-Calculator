@@ -66,7 +66,7 @@ function Calculation() {
   var time = console.timeEnd("The program went on for");
   console.groupEnd();
   
-  localStorage.setItem("For the number " + input.value, time);
+  alert("For the number " + input.value, time);
 
   if (divisor - 1 == input.value) {
     response.innerHTML = "<a style=color:#4dc3ff;text-decoration:none>" + input.value + "</a>" + " is a " + "prime number" + " !";
