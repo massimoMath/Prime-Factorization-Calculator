@@ -14,6 +14,7 @@ input.addEventListener("keydown", function(event) {
 
 //Input Validation
 function ValidateInput() {
+  localStorage.setItem('Previous Number', input.value);
   show_result.innerHTML = "";
   console.clear();
   console.info("%cState: operative", "font-weight:bold;font-size:15px;color:#00ff00");
@@ -65,8 +66,6 @@ function Calculation() {
   console.log("The divisor (initially set to 2) increased " + count_loop + " time(s).");
   console.timeEnd("The program went on for");
   console.groupEnd();
-  
-  localStorage.setItem('History', input.value);
 
   if (divisor - 1 == input.value) {
     response.innerHTML = "<a style=color:#4dc3ff;text-decoration:none>" + input.value + "</a>" + " is a " + "prime number" + " !";
