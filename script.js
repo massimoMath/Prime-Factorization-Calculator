@@ -63,10 +63,10 @@ function Calculation() {
   console.log("%cCalculation finished", "font-size:15px;color:#4dc3ff");
   console.groupCollapsed("%cComplementary Information", "font-size:15px;color:#bd66ff;font-weight:bold");
   console.log("The divisor (initially set to 2) increased " + count_loop + " time(s).");
-  console.timeEnd("The program went on for");
+  var time = console.timeEnd("The program went on for");
   console.groupEnd();
   
-  localStorage.setItem(input.value, "4s");
+  localStorage.setItem("For the number " + input.value, time);
 
   if (divisor - 1 == input.value) {
     response.innerHTML = "<a style=color:#4dc3ff;text-decoration:none>" + input.value + "</a>" + " is a " + "prime number" + " !";
