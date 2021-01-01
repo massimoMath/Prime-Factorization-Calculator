@@ -66,7 +66,7 @@ function Calculation() {
   console.timeEnd("The program went on for");
   console.groupEnd();
   
-  localStorage.setItem(input.value, console.timeEnd("The program went on for"));
+  localStorage.setItem(input.value, "4s");
 
   if (divisor - 1 == input.value) {
     response.innerHTML = "<a style=color:#4dc3ff;text-decoration:none>" + input.value + "</a>" + " is a " + "prime number" + " !";
