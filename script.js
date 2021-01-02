@@ -14,7 +14,7 @@ input.addEventListener("keydown", function(event) {
 
 //Input Validation
 function ValidateInput() {
-  localStorage.setItem('Previous Number', input.value);
+  localStorage.setItem('Previous Number' + new Date(), input.value);
   show_result.innerHTML = "";
   console.clear();
   console.info("%cState: operative", "font-weight:bold;font-size:15px;color:#00ff00");
